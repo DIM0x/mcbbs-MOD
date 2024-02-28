@@ -1,0 +1,19 @@
+﻿/*
+[name]冬季[/name]
+[iconbgcolor]#4d82ff[/iconbgcolor]
+Powered by Discuz! X
+*/
+
+
+#body_fixed_bg { width:100%;height:100%;position:fixed;top:0;z-index:-99999;background: #FAF6ED url(body_bg_ice.jpg);background-size:cover; }
+#nv .nv_ul { background:#87abff url("nv.png") left top no-repeat; }
+#nv .nv_ul li a { border-right: 1px solid #617dbf; border-left: 1px solid #617dbf; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);}
+#nv .nv_ul li:last-child a{border-right:1px solid #617dbf}
+#nv .nv_ul li a:hover {background:#4d82ff; color:#fff;}
+#toptb { background: url(top_bg.png) 0 0 repeat; box-shadow: 1px 1px 5px 1px #00000085; }
+#toptb .light a:hover { color:#87abff; }
+#hd .p_pop a:hover { color:#87abff; }
+
+.mc_map_border_login_top{width: 600px; height: 59px; float: left; background-size: 600px 59px; background: url(bg_border_top_login.png) center center no-repeat; margin-top: 30px; margin-bottom: -1px;}
+
+.mc_map_border_top { float: left; width: 1130px; height: 59px; background: url(bg_border_top.png) center center no-repeat; background-size: 1130px 59px; margin-bottom: -1px;}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://music.163.com/outchain/player?type=2&id=5331840&auto=0&height=66 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>网易云音乐</title>
+<link rel="stylesheet" type="text/css" href="./outchain-base.css">
+<link rel="stylesheet" type="text/css" href="./outchain-player.css">
+<style type="text/css">
+#player{margin:10px 0 0 10px;}
+</style>
+<!--[if lt IE 9]>
+<style>
+.player{border:1px solid #ccc;}
+</style>
+<![endif]-->
+<script src="./ctWebLogin.main.js.下载"></script><script src="./musicapm.min.js.下载" async=""></script><script>(function(){
+     if (window.MusicAPM) {
+        var puzzleEnv = 'prod' || 'prod';
+        var prodKey = 'e47f02ee-3307-450b-94c4-a2c7b40255be';
+        var testKey = '38cccb2c-9e9d-464e-97af-7f323bb5c973';
+        var uploadToTest = puzzleEnv !== 'prod' && testKey;
+        var appKey = uploadToTest ? testKey : prodKey;
+        var uploadServer = uploadToTest ? 'https://qa-wapm.igame.163.com' : 'https://sentry.music.163.com/wapm';
+        var sampleRate = uploadToTest ? 1.0 : 0.05
+        var udfCDNHostRegString = ''
+
+        var options = {
+           enableSPA: true,
+           hashSPA: true,
+           warningImageSize: 200,
+           filterCropImg: false,
+           traceLongtask: false,
+           traceResource: false,
+           ignoreUrlPath:  [{ rule: /\/\d+\//, target: '/**/' }, { rule: /\/\d+$/, target: '/**' }],
+           uploadServer: uploadServer,
+           syncConfig: false,
+           debug: uploadToTest,
+           sampleRate: sampleRate,
+           vitalsBadline: {"LCP":5000,"CLS":0.5,"FID":500},
+           pendingRequest: false,
+           useOverseaDomain: true,
+           udfCDNHostRegString: udfCDNHostRegString
+        };
+        MusicAPM.install(appKey, options);
+   }
+})();</script><script src="./music-corona.min.js.下载" async="" crossorigin="anonymous"></script><script>(function(){
+     if (window.MusicCorona) {
+        var puzzleEnv = 'prod' || 'prod';
+        var projectId = 3224;
+        window.corona = MusicCorona({
+            id: projectId,
+            env: puzzleEnv
+        });
+   }
+})();</script><script src="./injectorsdk.min.js.下载" async=""></script><script src="./validatorsdk.min.js.下载" async=""></script><script src="./deviceid.js.下载" async=""></script><script src="./smsUpLink.main.js.下载"></script><script src="./getBrowser.js.下载"></script><script src="./kickout.min.js.下载" async=""></script><script async="" src="./puzzle@0002A4.js.下载"></script><script>var GEnc = true;</script>
+<script type="text/javascript" src="./vipcashier.umd.js.下载"></script><script type="text/javascript" charset="UTF-8" async="" src="https://acstatic-dun.126.net/2.7.5_e2891084/watchman.min.js"></script></head>
+<body>
+<div id="player" style="width: 290px; height: 120px;"><div class="player player-mid f-cb f-pr">
+<div class="cover cover-sm f-pr">
+<img id="cover" src="./109951164910504055.jpg">
+<div class="mask"></div>
+<div id="play" class="bg play-bg" data-action="play"></div>
+<div id="pause" class="bg pause-bg f-hide" data-action="pause"></div>
+</div>
+<div id="mid-ctrl" class="ctrlBox" style="width: 204px;">
+<h2 class="f-pr"><i data-action="home" class="bg logo"></i><div id="title" class="title" style="width: 180px;">Again<span class="sub"> - Daydream</span></div></h2>
+<div id="bar" class="bar" style="width: 160px;">
+<div class="played j-flag" style="width: 0%;"><span class="bg thumb j-flag" id="auto-id-n2aDihb2czzVGNfq"></span></div>
+</div>
+</div>
+<span id="time" class="time">- 00:00</span>
+</div>
+</div>
+
+<script src="./core_61b497b01a62b27f2939c6219e1a6c7c.js.下载" type="text/javascript"></script><iframe frameborder="0" id="auto-id-IwFPdgMNEyCc8Dag" style="display: none;" src="./saved_resource.html"></iframe><script type="text/javascript" src="./tool.min.js.下载"></script><script src="./pt_outchain_player_29c1416b372657489d826dd4b0ab94d5.js.下载" type="text/javascript"></script>
+
+<script type="text/javascript">
+var _gaq=_gaq||[];
+_gaq.push(['_setAccount','UA-38766552-1'],['_setLocalGifPath','/UA-38766552-1/__utm.gif'],['_setLocalRemoteServerMode']);
+_gaq.push(['_trackPageview']);
+//fix ipad下的一个bug
+if (navigator.userAgent.indexOf('iPad') != -1) {
+iframeHeight = Math.max(
+Math.max(document.body.scrollHeight, document.documentElement.scrollHeight),
+Math.max(document.body.offsetHeight, document.documentElement.offsetHeight),
+Math.max(document.body.clientHeight, document.documentElement.clientHeight)
+);
+top.document.body.style.height = iframeHeight + 20 + 'px';
+}
+</script>
+</body></html>
